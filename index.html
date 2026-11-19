@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZYRON is an all-in-one social platform concept combining social networking, short-form video, messaging and marketplace features. Software asset available for acquisition.">
+  <meta name="theme-color" content="#090711">
+  <title>ZYRON — Social, video and commerce in one place</title>
+  <style>
+    :root{--bg:#090711;--panel:#131020;--panel2:#19142a;--text:#f7f4ff;--muted:#b5adc8;--purple:#9b6cff;--pink:#e66cff;--line:rgba(255,255,255,.11);--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 75% 0%,rgba(117,66,210,.22),transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(9,7,17,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.16em;font-size:1.08rem}
+    .mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--purple),var(--pink));display:grid;place-items:center;color:white;font-weight:900;letter-spacing:0;box-shadow:0 8px 30px #9b6cff55}
+    .navlinks{display:flex;gap:26px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:999px;background:linear-gradient(100deg,#8755ed,#c35ce8);color:white;font-weight:750;box-shadow:0 10px 30px #9958e944;border:0}
+    .btn.secondary{background:transparent;border:1px solid var(--line);box-shadow:none}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#d7c4ff;border:1px solid #9b6cff55;background:#9b6cff16;padding:7px 13px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.98;letter-spacing:-.065em;margin:22px 0}
+    .gradient{background:linear-gradient(100deg,#fff 10%,#c9a9ff 55%,#eea1f2);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:1.16rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .note{font-size:.82rem;color:#938aa7;margin-top:18px}
+    .visual{position:relative;min-height:470px;display:grid;place-items:center}
+    .orb{position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,#a66bff44,transparent 68%);filter:blur(8px)}
+    .phone{position:relative;width:230px;height:430px;border:1px solid #ffffff30;border-radius:34px;padding:12px;background:linear-gradient(155deg,#29213e,#100d19 65%);box-shadow:0 35px 90px #0009,0 0 60px #9b6cff24;transform:rotate(7deg)}
+    .screen{height:100%;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#24163c,#100e18 60%);padding:16px}
+    .screen-top{display:flex;justify-content:space-between;font-size:.7rem;color:#d9d0eb}.storyrow{display:flex;gap:9px;margin:20px 0}.story{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#8e59f2,#ed75cb);border:2px solid #d7baff}
+    .post-art{height:170px;border-radius:17px;background:radial-gradient(circle at 65% 30%,#f0a4ff,transparent 20%),linear-gradient(145deg,#7844d6,#25163d 55%,#10101d);margin:15px 0;position:relative;overflow:hidden}
+    .post-art:after{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff55;border-radius:50%;right:-40px;bottom:-75px;box-shadow:0 0 0 18px #ffffff0b,0 0 0 38px #ffffff08}
+    .line{height:7px;border-radius:9px;background:#ffffff22;margin:9px 0}.line.short{width:55%}.float-card{position:absolute;background:#171226dd;border:1px solid var(--line);backdrop-filter:blur(15px);padding:14px 17px;border-radius:17px;box-shadow:0 18px 45px #0007;font-size:.86rem}
+    .float-card strong{display:block;font-size:1.05rem}.fc1{top:75px;right:0}.fc2{bottom:65px;left:0}
+    section{padding:78px 0;border-top:1px solid var(--line)}.section-kicker{color:#bd9cff;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800}
+    h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.045em;line-height:1.1;margin:12px 0 18px}.sub{color:var(--muted);max-width:720px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:35px}.card{background:linear-gradient(150deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:25px;min-height:190px}
+    .ico{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:#9b6cff22;color:#d7baff;font-size:1.25rem;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:1.12rem}.card p{color:var(--muted);font-size:.94rem;margin:0}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.panel{background:linear-gradient(145deg,#1a142a,#100d18);border:1px solid var(--line);border-radius:25px;padding:30px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{border:1px solid var(--line);background:#ffffff08;color:#ddd3ee;border-radius:999px;padding:8px 13px;font-size:.86rem}
+    .sale{background:linear-gradient(120deg,#211538,#130f20);border:1px solid #a77aff55;border-radius:28px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    footer{padding:35px 0;color:#9188a4;font-size:.86rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:800px){.hero,.two{grid-template-columns:1fr}.hero{padding-top:70px}.visual{min-height:430px}.grid{grid-template-columns:1fr 1fr}.navlinks{display:none}.sale{display:block}.sale .btn{margin-top:20px}}
+    @media(max-width:520px){.grid{grid-template-columns:1fr}.wrap{width:min(100% - 30px,var(--max))}.hero{gap:15px}.visual{transform:scale(.92);margin:0 -12px}.sale{padding:28px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#"><span class="mark">Z</span> ZYRON</a>
+  <div class="navlinks"><a href="#platform">Platform</a><a href="#features">Features</a><a href="#technology">Technology</a><a href="#acquisition">Acquisition</a></div>
+  <a class="btn secondary" href="#acquisition">Acquisition</a>
+</nav></div></header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow">A connected social experience</span>
+      <h1>Social. Video.<br><span class="gradient">Commerce.</span></h1>
+      <p class="lead">ZYRON is an all-in-one social platform concept bringing social networking, short-form video, messaging and marketplace experiences together in one product.</p>
+      <div class="actions"><a class="btn" href="#platform">Explore the platform</a><a class="btn secondary" href="#acquisition">Acquisition information</a></div>
+      <p class="note">Software asset available for acquisition · Pre-launch project</p>
+    </div>
+    <div class="visual" aria-label="Illustrative ZYRON mobile app concept">
+      <div class="orb"></div><div class="phone"><div class="screen">
+        <div class="screen-top"><b>ZYRON</b><span>● ● ●</span></div>
+        <div class="storyrow"><i class="story"></i><i class="story"></i><i class="story"></i><i class="story"></i></div>
+        <div style="font-weight:750;font-size:.9rem">Discover your world</div>
+        <div class="post-art"></div><div class="line"></div><div class="line short"></div>
+        <div style="display:flex;justify-content:space-between;color:#d9c8ff;font-size:.75rem;margin-top:18px"><span>♡  ◯  ↗</span><span>⌂  ◉  ▣</span></div>
+      </div></div>
+      <div class="float-card fc1"><strong>One platform</strong><span style="color:#b5adc8">Many ways to connect</span></div>
+      <div class="float-card fc2"><strong>Social + Video</strong><span style="color:#b5adc8">Marketplace + Messaging</span></div>
+    </div>
+  </div>
+  <section id="platform"><div class="wrap two">
+    <div><span class="section-kicker">The platform</span><h2>Multiple experiences.<br>One connected product.</h2>
+      <p class="sub">ZYRON brings together familiar social experiences with creator-focused video and community commerce. The project is presented as a software asset for a buyer to evaluate, deploy and develop further.</p>
+    </div>
+    <div class="panel"><span class="section-kicker">Product overview</span><h3 style="font-size:1.5rem;margin:12px 0">Built around connection</h3><p class="sub">A multi-section application concept designed to bring content discovery, conversations and buying and selling into a unified experience.</p>
+      <div class="chips"><span class="chip">Social networking</span><span class="chip">Short videos</span><span class="chip">Messaging</span><span class="chip">Marketplace</span><span class="chip">Creator tools</span><span class="chip">Privacy controls</span></div>
+    </div>
+  </div></section>
+  <section id="features"><div class="wrap">
+    <span class="section-kicker">Core experiences</span><h2>Explore what ZYRON brings together</h2><p class="sub">A broad feature set across content, communication and community commerce. Individual capabilities and production dependencies should be reviewed during technical due diligence.</p>
+    <div class="grid">
+      <article class="card"><div class="ico">◎</div><h3>Social networking</h3><p>Profiles, content sharing, follows and community interactions in a familiar social experience.</p></article>
+      <article class="card"><div class="ico">▶</div><h3>Short-form video</h3><p>A video-focused discovery experience with creator and engagement-oriented features.</p></article>
+      <article class="card"><div class="ico">✉</div><h3>Messaging & calls</h3><p>Communication features designed to bring conversations closer to the social experience.</p></article>
+      <article class="card"><div class="ico">▦</div><h3>Marketplace</h3><p>A place for community buying and selling, with listing and discovery concepts.</p></article>
+      <article class="card"><div class="ico">✧</div><h3>Creator tools</h3><p>Content management, audience engagement and promotional feature concepts.</p></article>
+      <article class="card"><div class="ico">◇</div><h3>Privacy & controls</h3><p>Account, visibility and interaction controls designed for user choice.</p></article>
+    </div>
+  </div></section>
+  <section id="technology"><div class="wrap two">
+    <div><span class="section-kicker">Technology</span><h2>A cross-platform app with a Python backend</h2><p class="sub">The project uses a Flutter mobile client and a Django backend. The buyer should review the repository, deployment configuration, third-party services and current integration status as part of due diligence.</p></div>
+    <div class="panel"><h3 style="margin-top:0">Technology stack</h3><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Python</span><span class="chip">Django</span><span class="chip">PostgreSQL</span><span class="chip">SQLite (development)</span><span class="chip">Docker</span><span class="chip">Android</span></div></div>
+  </div></section>
+  <section id="acquisition"><div class="wrap">
+    <div class="sale"><div><span class="section-kicker">Acquisition opportunity</span><h2 style="margin-bottom:10px">Interested in acquiring ZYRON?</h2><p class="sub">ZYRON is offered as a pre-launch software asset. There is no established public user base or revenue claimed on this website. A prospective buyer can request further project information and arrange technical due diligence.</p></div><a class="btn" href="https://github.com/mazari-dev">Contact on GitHub</a></div>
+    <p class="note">Production hosting, infrastructure, third-party service accounts and operational readiness are subject to buyer review and agreement. Product visuals on this page are illustrative.</p>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year">2026</span> ZYRON. All rights reserved.</span><span>Social · Video · Commerce</span></div></footer>
+</body>
+</html>
